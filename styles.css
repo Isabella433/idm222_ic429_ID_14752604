@@ -1,0 +1,649 @@
+@font-face {
+  font-family: 'SpectralSemibold';
+  src: url('webfonts/spectral-semibold-webfont.woff2') format('woff2'),
+       url('webfonts/spectral-semibold-webfont.woff') format('woff');
+  font-weight: 600; /* Use numeric value for font-weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source_sans_prosemibold';
+  src: url('sourcesanspro-semibold-webfont.woff2') format('woff2'),
+       url('sourcesanspro-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'source sans pro', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2{
+  font-family: 'SpectralSemibold', serif;
+  /* font-size: 24px; */
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+/* Add the new styles here */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: none; /* Hide the navigation by default */
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Show the navigation when the hamburger menu is clicked */
+.hamburger.active + .main-nav {
+    display: block;
+}
+
+
+.logo {
+	margin: 0;
+	/* font-size: 1.45em; */
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+  color: #01356b;
+}
+
+.main-nav a {
+	color: #01356B;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.yale-art-school {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.header {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school-title {
+  color: #01356b;
+  font: 600 30px Spectral, sans-serif;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #01356b;
+}
+
+.hero-section {
+  height: 655px;       /*height: 655px;   width: auto;*/
+  width: auto;
+  margin: 15px;
+  border-radius: 6px;
+  background: url("assets/img/home_page_photo_3.png") top/cover;  /* tried to replace image but did not work */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  object-fit: cover;
+  
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 20;
+
+}
+
+.mast-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-row: 1;
+  z-index: 10;
+}
+
+.hero-main-title {
+  margin-bottom: 8px;
+  font: 800 25px Spectral, sans-serif;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 10;
+
+}
+
+.hero-subtitle {
+  font: 17px Spectral, sans-serif;
+
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 10;
+
+}
+
+.section-container {
+  padding: 15px;
+}
+
+/* popular majors */
+
+.section-title-popular-majors {
+  color: #01356b;
+  margin-bottom: 15px;
+  font: 600 24px Spectral, sans-serif;
+}
+
+.majors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.major-card {  /* change icon height in fimga all have different heights */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  background-color: #f8f9ff;
+  padding: 15px;
+  text-align: center;
+  height: 105px;
+  font: 17px "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between 65px;
+}
+
+/* page 20 of flexbox notes pg 17, 18 , 19, 20 26 -31 */
+
+.artist-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.artist-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.artist-image {
+    height: auto; /* look back at notes for response (review images/flexbox and grid) fill the whole box with flex box*/
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    
+    align-items: center; /* (review from (web authoring 1 positioning W7) to make the tag absolute */
+    
+    
+    grid-column: 1;
+    grid-row: 1;
+
+  
+    /* to flex box or grid to fix image size and placement for both images */
+  }
+
+.art-class {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 4px;
+  border-radius: 6px 0 6px 0;
+  font-size: 12px;
+}
+
+.artist-content {
+  padding: 8px;
+}
+
+.artist-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+
+
+/* Space*/
+
+
+.artist-duration {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* event 1 starts */
+.event-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.event-icon {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-right: 8px;
+  background: url(assets/img/art_gallery4.png) center/cover;  /* How to make the image not mirror or have the same copy above*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.event-location {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.event-date {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  width: 90px;
+}
+/* event 1 ends */
+
+/* event 2 STARTS */
+
+.event-item-2 {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.event-icon-2 {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-right: 8px;
+  background: url(assets/img/environmentyale2b.jpg) center/cover;  /* How to make the image not mirror or have the same copy above*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.event-details-2 {
+  flex: 1;
+}
+
+.event-title-2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.event-location-2 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.event-date-2 {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  width: 90px;
+}
+/* Event 2 Ends */
+
+.showcase-post {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: url(assets/icons/yale_insta_icon.png) center/cover;  /* How to make the image not mirror or have the same copy above*/
+
+}
+
+.user-details {
+  font-size: 12px;
+}
+
+.username {
+  color: #1d1d21;
+}
+
+.post-time {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.art-work{
+  width: 100%;
+  height: auto;
+  object-fit: contain;    
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center; /* (review from (web authoring 1 positioning W7) to make the tag absolute */
+  grid-column: 1;
+  grid-row: 1;
+  
+}
+
+.post-content {
+  padding: 12px;
+}
+
+.post-text {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+}
+
+.tag-item {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+.view-more {
+  color: #1d1d21;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* article one starts */
+
+.article-item {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.article-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background: url(assets/img/articles_lego.png) center/cover;  /* How to make the image not mirror or have the same copy above*/
+}
+
+.article-content {
+  flex: 1;
+}
+
+.article-title {
+  color: #01356b;
+  margin-bottom: 4px;
+  font: 500 16px Spectral, sans-serif;
+}
+
+.article-description {
+  color: #1d1d21;
+  margin-bottom: 4px;
+  font: 12px "Source Sans Pro", sans-serif;
+}
+
+.article-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.author-name {
+  font-size: 13.5px;
+  color: #000;
+  font-weight: 300;
+}
+
+/* article One ENDS */
+
+/* article Two STARTS */
+
+.article-item-2 {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.article-image-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background: url(assets/img/Art_Technology_Integration_v1a.png) center/cover;  /* How to make the image not mirror or have the same copy above*/
+}
+
+.article-content-2 {
+  flex: 1;
+}
+
+.article-title-2 {
+  color: #01356b;
+  margin-bottom: 4px;
+  font: 500 16px Spectral, sans-serif;
+}
+
+.article-description-2 {
+  color: #1d1d21;
+  margin-bottom: 4px;
+  font: 12px "Source Sans Pro", sans-serif;
+}
+
+.article-author-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-avatar-2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.author-name-2 {
+  font-size: 13.5px;
+  color: #000;
+  font-weight: 300;
+}
+
+
+
+/* article two ENDS */
+
+/* Media queires*/
+
+@media (max-width: 640px) {
+  .majors-grid,
+  .artist-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @media (min-width: 1920px) {
+  .section-container ,
+  .art-work {
+    grid-template-columns: 1fr;
+  }
+} (not applicpal what i am trying fix image*/
+
+/* Media queires ENDS*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
