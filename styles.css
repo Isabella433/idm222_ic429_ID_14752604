@@ -487,6 +487,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .tags {
@@ -514,6 +515,7 @@ a {
   display: flex;
   gap: 12px;
   padding: 8px 0;
+  align-items: center;
   position: relative;
 }
 
@@ -530,7 +532,6 @@ a {
 
 .article-title {
   color: #01356b;
-  margin-bottom: 4px;
   font: 500 16px Spectral, sans-serif;
 }
 
@@ -632,6 +633,15 @@ a {
     grid-template-columns: 1fr;
   }
 } (not applicpal what i am trying fix image*/
+
+
+
+.footer {
+  color: #040404;
+  padding: 15px;
+  text-align: center;
+}
+
 
 /* Media queires ENDS*/
 
