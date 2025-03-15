@@ -244,7 +244,10 @@ a {
   gap: 10px;
 }
 
-.major-card {  /* change icon height in fimga all have different heights */
+.major-card {  /* change icon height in fimga all have different heights (I did change the height in figma 
+  but there is still a bigger gap between photography and the camera icon will go back to this later. 
+  Should I make a class for each image and box? Also the height of all the icons are 52 on figma but when uploaded 
+  to VS show different H*/
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1px;
   background-color: #f8f9ff;
