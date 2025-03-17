@@ -735,13 +735,35 @@ a {
   margin: 0;
 }
 
+/* stats section */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+  gap: 20px;
+}
+
 .stats-section {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .stat-item {
   padding: 40px;
   color: #01356b;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.image-placeholder {
+  width: 720px;
+  height: 518px;
+  background-color: grey;
 }
 
 .stat-label {
