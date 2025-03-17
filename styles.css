@@ -740,9 +740,12 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: 50px 50px;
   grid-template-rows: 50px 50px;
   gap: 20px;
+  
 }
 
 .stats-section {
@@ -753,31 +756,45 @@ a {
 }
 
 .stat-item {
+  display: flex;
+  justify-content: space-between;
   padding: 40px;
   color: #01356b;
   display: flex;
   align-items: center;
+  padding: 35px;
+  flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
+  width: 1440px ;
+  height: 518;
+  border-radius: 10px;
  
 }
+
 
 .image-placeholder {
   width: 720px;
   height: 518px;
   background-color: grey;
-}
+  flex-shrink: 0;
+  margin-top: 20px;
+} 
 
 .stat-label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
-  margin: 0;
+  margin-bottom: 10px; /* Add vertical margin between labels */
+
 }
 
 .stat-number {
   font-family: "Spectral", serif;
   font-size: 55px;
   font-weight: 800;
-  margin: 0;
+  margin-bottom: 10px; /* Add vertical margin between labels */
+  padding: 20px; /* Add vertical padding */
 }
+
+/* Stats section ENDS */
 
 .programs-section {
   padding: 40px 27px;
@@ -885,7 +902,20 @@ a {
   }
 } (not applicpal what i am trying fix image*/
 
+/* Media query for mobile devices on About page */
+@media (max-width: 768px) {
+  .stat-item {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%; /* Full width on mobile */
+  }
 
+  .image-placeholder {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    margin-top: 20px;
+  }
+}
 
 .footer {
   color: #040404;
