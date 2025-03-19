@@ -31,6 +31,7 @@ ul {
 }
 h1, h2{
   font-family: 'SpectralSemibold', serif;
+  color: #01356b;
   /* font-size: 24px; */
 }
 
@@ -743,6 +744,11 @@ a {
 
 /* stats section */
 
+
+.stat-reverse-i-t {
+  flex-direction: row-reverse;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -777,13 +783,7 @@ a {
 }
 
 
-.image-placeholder {
-  width: 720px;
-  height: 518px;
-  background-color: grey;
-  flex-shrink: 0;
-  margin-top: 20px;
-} 
+ 
 
 .stat-label {
   font-family: "Source Sans Pro", sans-serif;
@@ -799,6 +799,14 @@ a {
   margin-bottom: 10px; /* Add vertical margin between labels */
   padding: 20px; /* Add vertical padding */
 }
+
+.stat-image {
+  max-width: 720px;
+  max-height: 517px;
+  object-fit: contain;
+}
+
+
 
 /* Stats section ENDS */
 
