@@ -658,10 +658,11 @@ a {
 }
 
 .mission-section {
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .mission-title {
@@ -725,7 +726,7 @@ a {
   height: 38px;
   border-radius: 19px;
   margin: 0 auto 8px;
-  background: url("assets/img/author_photo_1");
+  /*background: url("assets/img/author_photo_1"); */
 }
 
 .alumni-name {
@@ -757,8 +758,11 @@ a {
   grid-template-columns: 50px 50px;
   grid-template-rows: 50px 50px;
   gap: 20px;
-  
+  box-sizing: border-box;
+  padding: 15px;
 }
+  
+
 
 .stats-section {
   text-align: center;
@@ -770,13 +774,13 @@ a {
 
 .stat-item {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between; */
   /*columns: gap 20px; */
   padding: 40px;
   color: #01356b;
   place-items: center;
   padding: 35px;
-  flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
+  /*flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
  /* width: 1440px ; */
   height: 518;
   border-radius: 10px;
@@ -803,9 +807,11 @@ a {
 }
 
 .stat-image {
-  max-width: 720px; 
-  max-height: 517px;
+  max-width: 720px;  
+  max-height: 517px; 
   object-fit: contain;
+  height: auto;
+    width: 100%;
 
 }
 
@@ -883,10 +889,7 @@ a {
   background-color: rgba(217, 217, 217, 0.5);
 }
 
-@media (max-width: 640px) {
-  .alumni-section {
-      padding: 40px 20px;
-  }
+
 
   .stats-section {
       padding: 20px;
@@ -899,7 +902,7 @@ a {
   .testimonial-grid {
       grid-template-columns: 1fr;
   }
-}
+
 
 .image-placeholder {
   width: 100%;
@@ -920,12 +923,17 @@ text-align: center;
 /* Media queires*/
 
 @media (max-width: 640px) {
+  .alumni-section {
+      padding: 40px 20px;
+  }
+}
+
+@media (max-width: 640px) {
   .majors-grid,
   .artist-cards
   .stat-image {
     grid-template-columns: 1fr;
-    height: auto;
-    width: 100%;
+    
   }
 }
 
@@ -943,9 +951,9 @@ text-align: center;
 @media (max-width: 768px) {
   .stat-item {
     flex-direction: column;
-    place-items: center;
+   /*place-items: center;
     width: 50%;
-    flex: 1 1 100%; /* Full width on mobile */
+    flex: 1 1 100%; */ /* Full width on mobile */
   }
 }
 
@@ -954,55 +962,6 @@ text-align: center;
       padding: 50px 50px;
   }
 }
-
- /* iPad Pro 12.9-inch Portrait */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* CSS rules for portrait mode */
-}
-
-/* iPad Pro 12.9-inch Landscape */
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* CSS rules for landscape mode */
-}
-
-@media only screen and (device-width: 393px) and (device-height: 852px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-  /* CSS rules for iPhone 14 Pro in portrait */
-}
-
-@media only screen and (device-width: 852px) and (device-height: 393px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-  /* CSS rules for iPhone 14 Pro in landscape */
-}
-
-@media only screen and (device-width: 390px) and (device-height: 844px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-  /* CSS rules for iPhone 12 Pro in portrait */
-}
-
-@media only screen and (device-width: 844px) and (device-height: 390px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-  /* CSS rules for iPhone 12 Pro in landscape */
-}
-
-@media only screen and (device-width: 375px) and (device-height: 667px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-  /* CSS rules for iPhone SE in portrait */
-}
-
-@media only screen and (device-width: 667px) and (device-height: 375px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-  /* CSS rules for iPhone SE in landscape */
-}
-
-
-
 
 
 /* Media queires ENDS*/
