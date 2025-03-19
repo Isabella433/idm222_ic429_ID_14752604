@@ -725,7 +725,7 @@ a {
   height: 38px;
   border-radius: 19px;
   margin: 0 auto 8px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: url("assets/img/author_photo_1");
 }
 
 .alumni-name {
@@ -765,20 +765,22 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 60px 60px;
 }
 
 .stat-item {
   display: flex;
   justify-content: space-between;
+  /*columns: gap 20px; */
   padding: 40px;
   color: #01356b;
-  display: flex;
-  align-items: center;
+  place-items: center;
   padding: 35px;
   flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
-  width: 1440px ;
+ /* width: 1440px ; */
   height: 518;
   border-radius: 10px;
+  width: 50%;
  
 }
 
@@ -796,14 +798,15 @@ a {
   font-family: "Spectral", serif;
   font-size: 55px;
   font-weight: 800;
-  margin-bottom: 10px; /* Add vertical margin between labels */
-  padding: 20px; /* Add vertical padding */
+  margin-bottom: 6px; /* Add vertical margin between labels */
+  padding: 15px; /* Add vertical padding */
 }
 
 .stat-image {
-  max-width: 720px;
+  max-width: 720px; 
   max-height: 517px;
   object-fit: contain;
+
 }
 
 
@@ -918,10 +921,16 @@ text-align: center;
 
 @media (max-width: 640px) {
   .majors-grid,
-  .artist-cards {
+  .artist-cards
+  .stat-image {
     grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
   }
 }
+
+
+
 
 /* @media (min-width: 1920px) {
   .section-container ,
@@ -934,13 +943,17 @@ text-align: center;
 @media (max-width: 768px) {
   .stat-item {
     flex-direction: column;
-    align-items: center;
+    place-items: center;
+    width: 50%;
     flex: 1 1 100%; /* Full width on mobile */
   }
 }
 
-
-
+@media (max-width: 640px) {
+  .stat-section {
+      padding: 50px 50px;
+  }
+}
 
  /* iPad Pro 12.9-inch Portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
