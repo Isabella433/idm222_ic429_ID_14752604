@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../webfontkit_source_sans_pro"
+		},
+		{
+			"path": "../webfontkit_spectral"
+		}
+	]
+}
