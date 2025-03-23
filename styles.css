@@ -128,17 +128,17 @@ a {
 	.main-nav {
 		display: flex;
 	}
-	.header {
-		flex-direction: column;
-		align-items: center;
-    	.header{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	}
-
 }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+
 
 @media (min-width: 1025px) {
 	.header {
@@ -788,13 +788,27 @@ a {
  
 }
 
-
+/* STAT Text */
  
+.stat-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px; /* Add vertical margin between labels */
+  /*padding-left: 255px;*/
+  /*text-align: center; */
+  display: inline-block
+  align-items: center;
+
+}
+
 
 .stat-label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   margin-bottom: 10px; /* Add vertical margin between labels */
+  /*padding-left: 255px;*/
+  /*text-align: center; */
+  display: inline-block
 
 }
 
@@ -804,6 +818,7 @@ a {
   font-weight: 800;
   margin-bottom: 6px; /* Add vertical margin between labels */
   padding: 15px; /* Add vertical padding */
+  /*padding-left: 255px;*/
 }
 
 .stat-image {
@@ -811,7 +826,8 @@ a {
   max-height: 517px; 
   object-fit: contain;
   height: auto;
-    width: 100%;
+  padding-left: 155px;
+  /*  width: 100%; */
 
 }
 
@@ -929,12 +945,11 @@ text-align: center;
 }
 
 @media (max-width: 640px) {
-  .majors-grid,
-  .artist-cards
-  .stat-image {
-    grid-template-columns: 1fr;
-    
-  }
+.majors-grid,
+.artist-cards,
+.stat-image {
+  grid-template-columns: 1fr;
+}
 }
 
 
