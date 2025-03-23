@@ -667,7 +667,7 @@ a {
 
 .mission-title {
   font-family: "Spectral", serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #01356b;
   margin-bottom: 15px;
@@ -675,15 +675,15 @@ a {
 
 .mission-text {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   color: #000;
-  margin-bottom: 35px;
+  /*margin-bottom: 35px; */
 }
 
 .why-yale {
   font-family: "Spectral", serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #01356b;
   margin-bottom: 15px;
@@ -691,7 +691,7 @@ a {
 
 .why-yale-text {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   color: #000;
   margin: 0;
@@ -705,7 +705,7 @@ a {
 
 .alumni-title {
   font-family: "Spectral", serif;
-  font-size: 24px;
+  font-size: 37px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 30px;
@@ -731,7 +731,7 @@ a {
 
 .alumni-name {
   font-family: "Spectral", serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
   margin-bottom: 5px;
 }
@@ -841,15 +841,15 @@ a {
 
 .programs-title {
   font-family: "Spectral", serif;
-  font-size: 26px;
+  font-size: 34px;
   font-weight: 700;
-  color: #000;
-  margin-bottom: 20px;
+  color: #01356b;
+  margin-bottom: 5px;
 }
 
 .programs-desc {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 12px;
+  font-size: 17px;
   line-height: 19px;
   color: #000;
   margin-bottom: 20px;
@@ -875,24 +875,24 @@ a {
 }
 
 .testimonial-avatar {
-  width: 21px;
-  height: 21px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-name {
   font-family: "Spectral", serif;
-  font-size: 9px;
+  font-size: 17px;
   font-weight: 500;
   margin: 0;
 }
 
 .testimonial-text {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 10px;
-  line-height: 16px;
-  margin: 0;
+  font-size: 22px;
+  line-height: 33px;
+  margin: auto;
 }
 
 .footer {
