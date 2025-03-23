@@ -751,15 +751,16 @@ a {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   grid-template-columns: 50px 50px;
   grid-template-rows: 50px 50px;
   gap: 20px;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 25px;
+  align-content: center;
 }
   
 
@@ -783,10 +784,10 @@ a {
   padding: 35px;
   /*flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
  /* width: 1440px ; */
-  height: 518;
+  /*height: 518; */
   border-radius: 10px;
-  width: 50%;
-  flex-direction: column;
+  width: 100%;
+  /*flex-direction: column; */
  
 }
 
@@ -804,8 +805,9 @@ a {
 
 .stat-label {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px; /* Add vertical margin between labels */
+  font-size: 32px;
+  margin-top: auto;
+  margin-bottom: auto; /* Add vertical margin between labels */
   /*padding-left: 255px;*/
   /*text-align: center; */
   display: inline-block
@@ -814,21 +816,19 @@ a {
 
 .stat-number {
   font-family: "Spectral", serif;
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 800;
-  margin-bottom: 6px; /* Add vertical margin between labels */
+  margin-top: auto;
+  margin-bottom: auto; /* Add vertical margin between labels */
   padding: 15px; /* Add vertical padding */
   /*padding-left: 255px;*/
 }
 
 .stat-image {
-  max-width: 720px;  
-  max-height: 517px; 
+  width: 100%;  
+  height: auto; 
   object-fit: contain;
   height: auto;
-  padding-left: 155px;
-  /*  width: 100%; */
-
 }
 
 
