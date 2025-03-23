@@ -776,15 +776,17 @@ a {
   display: flex;
   /*justify-content: space-between; */
   /*columns: gap 20px; */
-  padding: 40px;
+  /*padding: 40px; */
   color: #01356b;
   place-items: center;
+  align-items: center;
   padding: 35px;
   /*flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
  /* width: 1440px ; */
   height: 518;
   border-radius: 10px;
   width: 50%;
+  flex-direction: column;
  
 }
 
