@@ -722,8 +722,8 @@ a {
 }
 
 .alumni-avatar {
-  width: 38px;
-  height: 38px;
+  width: auto;
+  height: auto;
   border-radius: 19px;
   margin: 0 auto 8px;
   /*background: url("assets/img/author_photo_1"); */
