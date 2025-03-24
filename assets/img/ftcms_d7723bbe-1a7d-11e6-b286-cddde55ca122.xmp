@@ -6,25 +6,26 @@
     xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
     xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
     xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
     xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
-    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
    exif:ExifVersion="0231"
    tiff:Orientation="1"
    xmpMM:DocumentID="35813A3A10E26025306930266C0A9992"
    xmpMM:OriginalDocumentID="35813A3A10E26025306930266C0A9992"
-   xmpMM:InstanceID="xmp.iid:acc95b8e-b7ab-4876-8b97-49c0c1df69d5"
+   xmpMM:InstanceID="xmp.iid:87289b42-4bdc-43d6-9817-078eb9adf7f2"
    dc:format="image/avif"
+   xmp:MetadataDate="2025-03-23T22:23:34-04:00"
    crs:Version="17.0"
    crs:ProcessVersion="15.4"
    crs:WhiteBalance="As Shot"
    crs:IncrementalTemperature="0"
    crs:IncrementalTint="0"
-   crs:Exposure2012="0.00"
+   crs:Exposure2012="+0.05"
    crs:Contrast2012="+1"
    crs:Highlights2012="-2"
    crs:Shadows2012="0"
-   crs:Whites2012="-2"
+   crs:Whites2012="-3"
    crs:Blacks2012="-1"
    crs:Texture="0"
    crs:Clarity2012="0"
@@ -116,14 +117,19 @@
    crs:HasCrop="False"
    crs:AlreadyApplied="False"
    photoshop:SidecarForExtension="AVIF"
-   photoshop:EmbeddedXMPDigest="00000000000000000000000000000000"
-   xmp:MetadataDate="2025-03-23T18:19:48-04:00">
+   photoshop:EmbeddedXMPDigest="00000000000000000000000000000000">
    <xmpMM:History>
     <rdf:Seq>
      <rdf:li
       stEvt:action="saved"
       stEvt:instanceID="xmp.iid:acc95b8e-b7ab-4876-8b97-49c0c1df69d5"
       stEvt:when="2025-03-23T18:19:48-04:00"
+      stEvt:softwareAgent="Adobe Photoshop Camera Raw 17.0 (Macintosh)"
+      stEvt:changed="/metadata"/>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:87289b42-4bdc-43d6-9817-078eb9adf7f2"
+      stEvt:when="2025-03-23T22:23:34-04:00"
       stEvt:softwareAgent="Adobe Photoshop Camera Raw 17.0 (Macintosh)"
       stEvt:changed="/metadata"/>
     </rdf:Seq>

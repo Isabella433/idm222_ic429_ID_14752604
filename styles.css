@@ -733,12 +733,13 @@ a {
   font-family: "Spectral", serif;
   font-size: 17px;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  margin-top: auto;
 }
 
 .alumni-achievement {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 13px;
+  font-size: 23px;
   color: #fff;
   margin: 0;
 }
