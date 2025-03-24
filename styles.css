@@ -966,6 +966,17 @@ text-align: center;
 } (not applicpal what i am trying fix image*/
 
 /* Media query for mobile devices on About page */
+
+/*@media (max-width:430px) {
+  .stat-section, .stat-image {
+      padding: 15px 15px;
+      width: 100%;
+      height: auto;
+  } 
+} */
+
+
+
 @media (max-width: 768px) {
   .stat-item {
     flex-direction: column;
